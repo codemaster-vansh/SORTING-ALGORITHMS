@@ -51,6 +51,5 @@ int main(){
     vector<int> sorted = BubbleSort(array);
     cout << "Sorted Array is: ";
     printArr(sorted);
-    //printArr(array);
     return 0; 
 }
