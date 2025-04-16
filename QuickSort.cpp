@@ -1,9 +1,8 @@
 #include <iostream>
 #include <stack>
 #include <vector>
-using namespace std;
 
-void quicksort(vector<int>& array, int low, int high){
+void quicksort(std::vector<int>& array, int low, int high){
     if (low >= high){
         return;
     }
