@@ -1,0 +1,23 @@
+name: Example Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Step for 24f3002271@ds.study.iitm.ac.in
+      run: echo "This step includes the email address"
+    
+    - name: Run sample command
+      run: |
+        echo "Workflow is running successfully!"
+        date
