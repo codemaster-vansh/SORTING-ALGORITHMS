@@ -1,29 +1,9 @@
 #include <iostream>
 #include <vector>
-#include <random>   
 #include <algorithm>
+#include "utils.h"
+
 using namespace std;
-
-void printArr(vector<int> array){
-    cout << "[";
-    for (int i = 0;i<array.size();i++){
-        cout << array[i] << " ";
-    }
-    cout << "]" << endl;
-}
-
-vector<int> ArrayGen(int size, int min, int max){
-    int rand;
-    vector<int> array;
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> distrib(min,max);
-    for (int i  = 0;i<size;i++){
-        rand = distrib(gen);
-        array.push_back(rand);
-    }
-    return array;
-}
 
 vector<int> InsertionSort(vector<int> array){
     int size = array.size();
